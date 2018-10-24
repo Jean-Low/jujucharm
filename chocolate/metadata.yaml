@@ -1,0 +1,19 @@
+name: chocolate
+summary: chocolate is a example project.
+maintainer: cloud <cloud@maas>
+description: |
+  chocolate is a simple example project for charm deployment made by following the oficial online tutorial
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: false
+provides:
+  website:
+    interface: http
+requires:
+  database:
+    interface: mysql
+peers:
+  peer-relation:
+    interface: cloud
